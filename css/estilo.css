@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial;
+    scroll-behavior: smooth;
+    background-color: #ccc;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo{
+    background-color: #949393;
+    text-align: center;
+    width: 25%;
+    height: auto;
+    border: 3px solid #000;
+}
+
+#logo figcaption{
+    color: #fff;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+nav{
+    border: 3px solid #000;
+    width: 75%;
+    background: url(../img/supermercado.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e62929;
+    height: 40px;
+    margin: auto;
+    font-size: 16pt;
+    width: 25%;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 10px;
+}
+
+.container{
+    margin: 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 26pt;
+    text-align: center;
+}
+
+hr{
+    width: 95%;
+    margin-left: 2.5%;
+    height: 2px;
+    background-color: #000;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.box{
+    width: 300px;
+    height: 350px;
+    border: 2px solid #000;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.box img{
+    width: auto;
+    max-width: 300px;
+    height: 190px;
+    margin: auto;
+    display: block;
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+.box:hover h3{
+    animation: mudar 1s ease-out;
+}
+
+@keyframes mudar{
+    0%{
+        background-color: #fff;
+    }
+    50%{
+        background-color: #eb6f6f;
+    }
+    100%{
+        background-color: #f03939;
+    }
+}
+
+.box figcaption{
+    text-align: center;
+    font-size: 17pt;
+    margin: 10px;
+    height: 22%;
+}
+
+h3{
+    text-align: center;
+    font-size: 30pt;
+    border: 3px solid #000;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 40px;
+    margin: 0px;
+}
+
+input{
+    padding: 15px;
+    width: 70%;
+    height: 35px;
+    font-size: 16pt;
+    border-radius: 15px;
+    border: 3px solid #000;
+}
+
+button{
+    padding: 18px 42px;
+    background-color: #e62929;
+    color: #fff;
+    border: none;
+    font-size: 20pt;
+    border-radius: 20px;
+    border: 3px solid #000;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+#redes i{
+    width: 18%;
+    text-align: center;
+    font-size: 25pt;
+    margin-bottom: 20px;
+}
+
+.fa-facebook{
+    color: #fff;
+}
+
+.fa-twitter{
+    color: #fff;
+}
+
+.fa-instagram{
+    color: #fff;
+}
+
+.fa-snapchat{
+    color: #fff;
+}
+
+.fa-linkedin{
+    color: #fff;
+}
+
+#nomes{
+    text-align: center;
+    font-weight: bold;
+}
+
+#nomes p{
+    display: inline-block;
+    width: 23%;
+}
+
+@media screen and (max-width: 767px){
+    #logo figcaption{
+        display: none;
+    }
+
+    #logo{
+        width: 100%;
+    }
+
+    #logo img{
+        height: 100%;
+        width: auto;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav a{
+        font-size: 10pt;
+        padding: 3px;
+        height: 40px;
+        margin: 3px 3px;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+    }
+
+    .box{
+        width: 150px;
+        height: 175px;
+    }
+
+    .box img{
+        max-width: 150px;
+        height: 90px;
+    }
+
+    .box figcaption{
+        font-size: 8pt;
+    }
+
+    h3{
+        font-size: 10pt;
+    }
+
+    #nomes p{
+        margin: 5px auto;
+        text-align: center;
+        width: 100%;
+    }
+
+}
